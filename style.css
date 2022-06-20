@@ -60,6 +60,64 @@ li a {
   display: none;
 }
 
+section {
+  background-image: url("wrapper-background-three.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-info {
+  font-family: 'Kanit', sans-serif;
+  width: 100%;
+  background-color: #404040;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.fade-in h1 {
+  animation: slideMeHeader 500ms ease-in;
+}
+
+.fade-in-info p {
+  animation: slideMeInfo 1.5s ease-in;
+}
+
+
+@keyframes slideMeHeader {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideMeInfo {
+  0% {
+    transform: translateX(-1200px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @media screen and (max-width: 720px) {
   .container {
     flex-direction: column;
