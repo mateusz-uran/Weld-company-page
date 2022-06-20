@@ -87,13 +87,17 @@ section {
   text-align: center;
   padding-left: 5rem;
   padding-right: 5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .fade-in h1 {
+  width: 70%;
   animation: slideMeHeader 500ms ease-in;
 }
 
 .fade-in-info p {
+  width: 70%;
   animation: slideMeInfo 1.5s ease-in;
 }
 
